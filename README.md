@@ -1,71 +1,112 @@
-# flight_reservation_app/README.md
-
 # ✈️ ZAMILY Flight Reservation System 😈
 
-A simple desktop application for managing flight reservations, built with Python, Tkinter for the GUI, and SQLite for database management.
+A **desktop application** for managing flight reservations, built with **Python**, **Tkinter**, and **SQLite**.
+Book flights, view reservations, update details, and delete bookings—all in a **user-friendly interface** with a creative touch! 😉
 
-## Features
+![Project Screenshot](photo_proj.png)
 
-*   Book new flight reservations.
-*   View a list of all existing reservations.
-*   Update details of existing reservations.
-*   Delete reservations.
-*   User-friendly interface with a "creative" and "awesome" touch by ZAMILY! 😉
+---
 
-## Project Structure
+## 🌟 Features
 
+* 🛫 **Book New Flights** – Add passengers and flight details.
+* 📋 **View Reservations** – Display all bookings in a neat table.
+* ✏️ **Edit/Update Reservations** – Modify passenger info or flight details.
+* ❌ **Delete Reservations** – Remove unwanted bookings.
+* 🖥 **User-Friendly GUI** – Clean and intuitive interface.
+* 💾 **SQLite Database** – Stores all reservation details securely.
+
+---
+
+## 🛠 Technologies Used
+
+* **Python 3.x**
+* **Tkinter** – GUI framework
+* **SQLite3** – Database management
+* **PyInstaller (Optional)** – Create a standalone `.exe`
+* **GitHub** – Version control
+
+---
+
+## 💾 Installation & Running the App
+
+1. Clone the repository:
+
+```bash
+git clone <repository_url>
+cd flight_reservation_app
+```
+
+2. Make sure Python 3 is installed.
+
+3. Run the application:
+
+```bash
+python main.py
+```
+
+> The `flights.db` database will be created automatically if it doesn’t exist.
+
+---
+
+## 🏗 How to Build Executable (Optional)
+
+1. Install PyInstaller:
+
+```bash
+pip install pyinstaller
+```
+
+2. Run PyInstaller:
+
+```bash
+pyinstaller --onefile --windowed --name FlightZAMILY main.py
+```
+
+* `--onefile` → Creates a single executable
+* `--windowed` → No console window
+* `--name FlightZAMILY` → Sets the name of the `.exe`
+
+The executable will appear in the `dist/` folder.
+
+---
+
+## 📂 Project Structure
+
+```
 /flight_reservation_app
-├── main.py # Main application entry point
-├── database.py # SQLite database connection and CRUD operations
-├── home.py # Home page UI
-├── booking.py # Flight booking form UI
-├── reservations.py # View all reservations UI
-├── edit_reservation.py # Update/Delete functionality UI
-├── flights.db # SQLite database file (created on first run)
-├── requirements.txt # Required Python libraries (mainly for building)
-├── README.md # This file
-└── .gitignore # Specifies intentionally untracked files that Git should ignore
+├── main.py               # Main application entry point
+├── database.py           # SQLite database connection and CRUD operations
+├── home.py               # Home page UI
+├── booking.py            # Flight booking form UI
+├── reservations.py       # View all reservations UI
+├── edit_reservation.py   # Update/Delete functionality UI
+├── flights.db            # SQLite database file
+├── requirements.txt      # Python dependencies
+├── README.md             # Project documentation
+├── demo.mp4              # Demo video of the app
+├── photo_proj.png        # Project screenshot
+├── Attachment.pdf        # Additional project attachment
+└── __pycache__/          # Python cache files
+```
 
+---
 
-## Tools Used
+## 🎬 Demo Video
 
-*   **Python 3.x**
-*   **Tkinter** (for GUI)
-*   **SQLite3** (for database)
-*   **GitHub** (for version control - you're looking at it!)
-*   **(Optional) PyInstaller** (for creating a standalone executable)
+[Watch Demo](demo.mp4)
 
+---
 
-## How to Run
+## 🏆 Author
 
-1.  **Clone the repository (or download the files):**
-    ```bash
-    git clone <repository_url>
-    cd flight_reservation_app
-    ```
-2.  **Ensure Python 3 is installed.**
-3.  **Run the main application file:**
-    ```bash
-    python main.py
-    ```
-    The `flights.db` database file will be created automatically in the same directory if it doesn't exist.
+**Amr Eid – ZAMILY Team**
 
-## How to Build Executable (Optional)
+---
 
-1.  **Install PyInstaller:**
-    ```bash
-    pip install pyinstaller
-    ```
-2.  **Navigate to the project directory in your terminal.**
-3.  **Run PyInstaller:**
-    ```bash
-    pyinstaller --onefile --windowed --name FlightZAMILY main.py
-    ```
-    *   `--onefile`: Creates a single executable file.
-    *   `--windowed`: Prevents the console window from appearing when the GUI app runs.
-    *   `--name FlightZAMILY`: Sets the name of the executable.
-    *   You can also add `--icon=path/to/your/icon.ico` if you have an icon file.
+## 🔖 Badges
 
-    The executable will be found in the `dist` folder created by PyInstaller.
-
-## 😈 Brought to you by the ZAMILY Team! 😈
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-FF6F00?style=flat)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat)
+![PyInstaller](https://img.shields.io/badge/PyInstaller-EE2C2C?style=flat)
