@@ -1,0 +1,6 @@
+# flight_reservation_app/requirements.txt
+# For running the script, no external libraries are strictly needed
+# as tkinter and sqlite3 are part of the Python standard library.
+
+# For building the executable:
+pyinstaller

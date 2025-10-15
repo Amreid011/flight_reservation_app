@@ -1,0 +1,11 @@
+/flight_reservation_app
+├── main.py                 # نقطة الدخول الرئيسية للتطبيق
+├── database.py             # الاتصال بقاعدة البيانات وإعدادها، وعمليات CRUD
+├── home.py                 # واجهة الصفحة الرئيسية
+├── booking.py              # واجهة فورم حجز الرحلة
+├── reservations.py         # واجهة عرض كل الحجوزات
+├── edit_reservation.py     # واجهة تعديل/حذف الحجوزات
+├── flights.db              # ملف قاعدة البيانات SQLite
+├── requirements.txt        # المكتبات المطلوبة (هنحتاج pyinstaller بشكل أساسي للـ exe)
+├── README.md               # توثيق المشروع
+└── .gitignore              # لتجاهل الملفات غير المرغوب فيها في Git
